@@ -1160,3 +1160,19 @@ video {
 
 @media (min-width: 1536px) {
 }
+
+.text-black-custom {
+  color: black;
+}
+
+.voir-plus-link {
+  font-size: 1.25rem; /* Increase font size */
+  padding: 0.5rem; /* Add padding */
+  font-weight: bold; /* Make the text bold */
+  display: inline-block; /* Ensure padding is applied properly */
+}
+
+.voir-plus-link:hover {
+  color: #ffcc00; /* Change color on hover for better visibility */
+  text-decoration: underline; /* Underline on hover */
+}
