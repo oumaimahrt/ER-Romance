@@ -11302,7 +11302,7 @@ a:hover {
       -ms-flex-preferred-size: 0;
           flex-basis: 0;
   flex-grow: 1;
-  color: #f8f9fa;
+  color: #CC9966;
   font-weight: bold;
   text-decoration: none;
   font-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1300 - 300)));
