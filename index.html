@@ -75,7 +75,7 @@
             <div class="flex flex-col lg:flex-row justify-around items-center">
                 <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
                     <div class="text-lg sm:text-xl mb-6 sm:mb-6 tm-text-yellow text-center">
-                        <a href="traiteur.html"
+                        <a href="services/public_html/traiteur.html"
                             class="styled-button mb-8 flex justify-center items-center py-3 px-4 rounded-md transition">
                             <span>Traiteur</span>
                         </a>
@@ -89,7 +89,7 @@
                             réceptions.</p>
                         </p>
                         <div class="inline-block mt-5">
-                            <a href="traiteur.html"
+                            <a href="services/public_html/traiteur.html"
                                 class="flex justify-center items-center bg-black bg-opacity-70 py-6 px-8 rounded-lg font-semibold tm-text-2xl tm-main-gold hover:text-gray-200 transition">
                                 <i class="fas fa-arrow-right mr-2"></i>
                             </a>
@@ -99,7 +99,7 @@
 
                 <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
                     <div class="text-lg sm:text-xl mb-6 sm:mb-6 tm-text-yellow text-center">
-                        <a href="organization.html"
+                        <a href="services/public_html/org.html"
                             class="styled-button mb-8 flex justify-center items-center py-3 px-4 rounded-md transition">
                             <span>Organisation d’Événements</span>
                         </a>
@@ -113,7 +113,7 @@
                             élégance et perfection.</p>
                         </p>
                         <div class="inline-block mt-5">
-                            <a href="organization.html"
+                            <a href="services/public_html/org.html"
                                 class="flex justify-center items-center bg-black bg-opacity-70 py-6 px-8 rounded-lg font-semibold tm-text-2xl tm-main-gold hover:text-gray-200 transition">
                                 <i class="fas fa-arrow-right mr-2"></i>
                             </a>
@@ -123,7 +123,7 @@
 
                 <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
                     <div class="text-lg sm:text-xl mb-6 sm:mb-6 tm-text-yellow text-center">
-                        <a href="salles.html"
+                        <a href="services/public_html/salles.html"
                             class="styled-button mb-8 flex justify-center items-center py-3 px-4 rounded-md transition">
                             <span>Location de Salles</span>
                         </a>
@@ -136,7 +136,7 @@
                             raffinée, équipements modernes et cadre prestigieux pour une réception inoubliable.
                         </p>
                         <div class="inline-block mt-5">
-                            <a href="salles.html"
+                            <a href="services/public_html/salles.html"
                                 class="flex justify-center items-center bg-black bg-opacity-70 py-6 px-8 rounded-lg font-semibold tm-text-2xl tm-main-gold hover:text-gray-200 transition">
                                 <i class="fas fa-arrow-right mr-2"></i>
                             </a>
@@ -168,11 +168,11 @@
                 <footer class="absolute bottom-0 left-0 w-full">
                     <div
                         class="text-white container mx-auto tm-container p-8 text-lg flex flex-col md:flex-row justify-center">
-                        <a href="https://www.linkedin.com/in/oumaimahrete/" class="social-icon"><i
+                        <a href="https://www.instagram.com/abdelreception/" class="social-icon"><i
                                 class='bx bxl-instagram'></i></a>
-                        <a href="https://www.linkedin.com/in/oumaimahrete/" class="social-icon"><i class='bx bxl-facebook'></i></a>
-                        <a href="https://x.com/sunshiiine0" class="social-icon"><i class='bx bx-x'></i></a>
-                        <a href="https://x.com/sunshiiine0" class="social-icon"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://web.facebook.com/abdel.reception" class="social-icon"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/abdelreception/" class="social-icon"><i class='bx bx-x'></i></a>
+                        <a href="https://web.facebook.com/abdel.reception" class="social-icon"><i class='bx bxl-twitter'></i></a>
                     </div>
                 </footer>
             </div>
@@ -261,25 +261,30 @@
                 <div class="flex-1 rounded-xl p-12 pb-14 m-5 bg-black bg-opacity-50 tm-item-container">
                     <form action="https://api.web3forms.com/submit" method="POST" class="text-lg">
                         <input type="hidden" name="access_key" value="01d01197-a032-45d2-ac02-828ac668faeb">
-                        <input type="text" name="name"
+                        <input type="text" name="Nom Complet"
                             class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold"
                             placeholder="Nom" required="" />
-                        <input type="text" name="event_type"
+                        <select name="Type d´évenement"
                             class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold"
-                            placeholder="Type d´évenement" required="" />
-                        <input type="text" name="date"
+                            required>
+                            <option value="" disabled selected>Type d´évenement</option>
+                            <option value="mariage">Mariage</option>
+                            <option value="anniversaire">Anniversaire</option>
+                            <option value="autres">Autres</option>
+                        </select>
+                        <input type="date" name="Date"
                             class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold"
-                            placeholder="Date" required="" />
-                        <input type="text" name="number_of_people"
+                            placeholder="Date" required />
+                        <input type="number" name="Nombre de personnes"
                             class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold"
-                            placeholder="Nombre de personnes" required="" />
-                        <input type="text" name="phone_number"
+                            placeholder="Nombre de personnes" required min="1" />
+                        <input type="number" name="Téléphone"
                             class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold"
                             placeholder="Téléphone" required="" />
-                        <input type="email" name="email"
+                        <input type="email" name="Email"
                             class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold"
                             placeholder="Email" required="" />
-                        <textarea rows="6" name="message"
+                        <textarea rows="6" name="Message"
                             class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold"
                             placeholder="Message..." required=""></textarea>
                         <div class="text-center">
