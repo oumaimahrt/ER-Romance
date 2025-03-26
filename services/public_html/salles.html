@@ -12,6 +12,80 @@
     <!-- Bootstrap + Dorang main styles -->
     <link rel="stylesheet" href="assets/css/dorang.css">
 
+    <style>
+        /* Custom Styles for Features Section */
+        .features-section {
+            background-color: #000;
+            color: #fff;
+            padding: 80px 0;
+        }
+        
+        .gold-text {
+            color: #CC9966;
+        }
+        
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(204, 153, 102, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: #CC9966;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #CC9966;
+            margin-bottom: 20px;
+        }
+        
+        .feature-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #CC9966, transparent);
+            margin: 30px 0;
+        }
+        
+        .gallery-item {
+            height: 200px;
+            overflow: hidden;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .btn-gold {
+            background-color: #CC9966;
+            color: #000;
+            font-weight: 600;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-gold:hover {
+            background-color: #d8a972;
+            color: #000;
+            transform: translateY(-3px);
+        }
+    </style>
+
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="dark-theme">
@@ -220,8 +294,150 @@
             </div>
         </div>
         <!-- end of row -->
-
         <a href="#">All Posts <i class="ti-angle-double-right angle"></i></a>
+
+
+            <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="col-md-10 col-lg-8 m-auto">
+                <h2 class="title mb-4 text-center gold-text">Caractéristiques & Équipements</h2>
+                <p class="mb-5 text-center">Un cadre exceptionnel pour des événements inoubliables</p>
+            </div>
+
+            <!-- Capacity Row -->
+            <div class="row mb-5">
+                <div class="col-md-12 text-center">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="gold-text">Capacité</h3>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check gold-text"></i> 500 personnes assises pour Espace Romance</li>
+                            <li><i class="fas fa-check gold-text"></i> 150 personnes pour Concept Réceptions</li>
+                            <li><i class="fas fa-check gold-text"></i> Grandes salles modulables adaptées aux réceptions et événements professionnels</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-divider"></div>
+
+            <!-- Equipment Grid -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                        <h4 class="gold-text">Sonorisation et Éclairage</h4>
+                        <p>une ambiance immersive avec système audio haut de gamme et éclairage adapté à chaque événement.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h4 class="gold-text">Cuisine Équipée</h4>
+                        <p>Four, micro-ondes, chambre froide, piano de cuisine - tout le nécessaire pour les traiteurs et chefs professionnels.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-couch"></i>
+                        </div>
+                        <h4 class="gold-text">Mobilier</h4>
+                        <p>Tables et chaises élégantes adaptées aux réceptions, avec différentes options de disposition.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-door-open"></i>
+                        </div>
+                        <h4 class="gold-text">Loges Privatives</h4>
+                        <p>Espaces intimes pour les mariés et leur famille, avec miroirs et sièges confortables.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-divider"></div>
+
+            <!-- Comfort Section -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-snowflake"></i>
+                        </div>
+                        <h4 class="gold-text">Climatisation</h4>
+                        <p>Température idéale toute l'année pour le confort de vos invités.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h4 class="gold-text">Parking</h4>
+                        <p>Parking privé sécurisé avec gardiennage pour la tranquillité d'esprit.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h4 class="gold-text">Décoration</h4>
+                        <p>Options de décoration et vaisselle pour une personnalisation complète.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Section -->
+            <!-- <div class="row mt-5">
+                <div class="col-12">
+                    <h4 class="text-center gold-text mb-4">Galerie d'Équipements</h4>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="gallery-item">
+                                <img src="assets/imgs/equipment1.jpg" alt="Sonorisation">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="gallery-item">
+                                <img src="assets/imgs/equipment2.jpg" alt="Cuisine">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="gallery-item">
+                                <img src="assets/imgs/equipment3.jpg" alt="Salle">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="gallery-item">
+                                <img src="assets/imgs/equipment4.jpg" alt="Décoration">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- CTA -->
+            <div class="text-center mt-5">
+                <a href="https://www.google.com/maps" class="btn btn-gold">Localisation</a>
+            </div>
+            <div class="text-center mt-5">
+                <a href="../../index.html" class="btn btn-gold">Réserver Maintenant</a>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- <a href="#">All Posts <i class="ti-angle-double-right angle"></i></a> -->
 
     </div>
     <!-- end of page container -->

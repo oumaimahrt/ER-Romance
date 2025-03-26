@@ -68,6 +68,7 @@
   -webkit-line-clamp: 100; /* Number of lines to show */
   -webkit-box-orient: vertical;
 }
+
 *,
 *::before,
 *::after {
